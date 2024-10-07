@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body style */
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    cursor: url(./cursor-yellow.png), pointer;
+}
+
+span{
+    background: url(./cursor-yellow.png);
+    height: 30px;
+    width: 30px;
+    background-size: cover;
+    position: absolute;
+    background-position: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    animation: animate 0.3s linear;
+}
+
+@keyframes animate{
+    0%{
+        opacity: 1;
+        height: 30px;
+        width: 30px;
+    }
+    100%{
+        opacity: 0;
+        height: 0;
+        width: 0;
+    }
+}
