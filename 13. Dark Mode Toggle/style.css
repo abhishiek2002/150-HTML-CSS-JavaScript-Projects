@@ -1,0 +1,115 @@
+/* My code */
+
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#Toggle-btn{
+    visibility: hidden;
+}
+
+label{
+    width: 100px;
+    height: 40px;
+    background: black;
+    border-radius: 20px;
+    position: relative;
+    transition: all .4s linear;
+}
+
+.circle{
+    width: 35px;
+    height: 34px;
+    background: white;
+    border-radius: 24px;
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    transition: all 0.4s linear;
+}
+
+input:checked + label{
+    background: white;
+}
+
+input:checked + label .circle{
+    left: 62px;
+    background: #000;
+}
+
+
+/* Other Code */
+
+
+/* body{
+    margin: 0;
+    height: 100vh;
+   /* /* background-color: rgb(215, 216, 217); */ */
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .4s; */
+/* } */ 
+
+
+/* .label{
+    width: 80px;
+    height: 40px;
+    background-color: lightgrey;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgb(0,0,0,0.3);
+    position: relative;
+    transition: all .4s;
+} */
+
+/* .input{
+    visibility: hidden;
+    /* position: absolute; */
+/* } */ 
+
+/* .circle{ 
+    /* /* we take width and height 34px because height of label is 40px. So 6px left and now we will give top 3px that's why it left 3px from up and 3px down */ */
+    /* width: 34px;
+    height: 34px;
+    background-color: white;
+    border-radius: 50%;
+    top: 3px;
+    position: absolute;
+    cursor: pointer;
+    animation: toggleOff .4s linear forwards; */
+/* } */ 
+
+/* input:checked + .label{
+    background-color: white;
+} */
+
+/* input:checked + .label .circle{
+  /*  /* forward neccessary to keep animated object keep at last point at which animation finish */ */
+    /* animation: toggleOn .4s linear forwards; 
+    background-color: black;
+} */ 
+
+/* @keyframes toggleOn {
+    0%{
+        transform: translateX(0);
+
+    }
+    100%{
+        transform: translateX(40px);
+    }
+} */
+
+/* @keyframes toggleOff {
+    0%{
+        transform: translateX(40px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}  */
+
+
