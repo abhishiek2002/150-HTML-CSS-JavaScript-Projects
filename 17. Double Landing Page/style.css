@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid; */
+}
+
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.split{
+    width:50%;
+    height: 100%;
+}
+
+h1{
+    font-size: 100px;
+    color: aliceblue;
+    backdrop-filter: brightness(.5);
+    letter-spacing: 4px;
+}
+
+/* .split button{
+    margin: 32px;
+} */
+
+.left{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: pink;
+    background-image: url("https://sirphire.s3.ap-south-1.amazonaws.com/wp-content/uploads/sites/2/2022/05/30133639/abstract-background-arrows-iphone-pro-mobile-cover-side-view.jpg");
+    background-size: cover;
+    /* background-position: center; */
+
+}
+
+.right{
+    top: 0;
+    position: absolute;
+    right: 0;
+    background-color: lightblue;
+    background-image: url("https://images.samsung.com/is/image/samsung/p6pim/in/2401/gallery/in-galaxy-s24-s928-sm-s928bztqins-thumb-539573348");
+    /* background-position: center; */
+    background-size: cover;
+}
+
+.btn{
+    background-color: black;
+    color: white;
+    padding: 20px 40px;
+    font-size: 25px;
+    border: 4px solid;
+    cursor: pointer;
+    transition: all 1s ;
+}
+
+.btn:hover{
+    background-color: white;
+    color: black;
+}
