@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid; */
+}
+
+body{
+    height: 100vh;
+    background-color: lightcoral;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock{
+    width: 200px;
+    height: 200px;
+    background: lightgray;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid gray;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.brand{
+    position: absolute;
+    top: 20%;
+}
+
+#no3{
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    color: lightgoldenrodyellow;
+}
+#no6{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    color: lightgoldenrodyellow;
+}
+#no9{
+    position: absolute;
+    /* right: 5px; */
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    color: lightgoldenrodyellow;
+}
+#no12{
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    color: lightgoldenrodyellow;
+}
+
+.mid{
+    width: 10px;
+    height: 10px;
+    /* background-color: rgb(9, 95, 9); */
+    border-radius: 5px;
+    position: relative;
+}
+
+.mid::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgb(9, 95, 9);
+    border-radius: 5px;
+    position: absolute;
+    z-index: 1;
+}
+
+.time{
+    width: 100%;
+    height: 100%;
+    /* border-radius: 50%; */
+    position: absolute;
+    /* background: #000; */
+    /* border: 1px solid; */
+}
+
+.hourTick{
+    height: 35px;
+    width: 5px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-100%);
+}
+.minuteTick{
+    height: 50px;
+    width: 5px;
+    background-color: gray;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-100%);
+}
+.secondTick{
+    height: 65px;
+    width: 5px;
+    background-color: lightsalmon;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-100%);
+    
+}
+
+.hour{
+    transform: rotateZ(70deg);
+}
+    
+.second{
+    transform: rotateZ(90deg);
+}
+
+.minute{
+    transform: rotateZ(27deg);
+}
