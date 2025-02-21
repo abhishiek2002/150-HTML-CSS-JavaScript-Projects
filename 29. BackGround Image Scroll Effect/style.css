@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.img-container{
+    background-image: url(/26.\ Sticky\ Navbar/computer\ photo.webp);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.container{
+    padding: 100px;
+}
+
+h1{
+    font-size: 50px;
+}
+
+p{
+    margin: 20px;
+    color: gray;
+}
+
+@media (max-width:500px){
+    .container{
+        padding: 10px;
+    }
+}
